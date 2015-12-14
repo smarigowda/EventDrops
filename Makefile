@@ -6,6 +6,9 @@ build:
 
 test: karma mocha
 
+test-watch:
+	./node_modules/.bin/babel-node ./node_modules/.bin/karma start test/karma/karma.conf.js
+
 karma:
 	./node_modules/karma/bin/karma start test/karma/karma.conf.js --single-run
 
